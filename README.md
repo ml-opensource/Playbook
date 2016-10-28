@@ -29,6 +29,12 @@ This is the main meeting in the iOS team, where we talk about the latest things 
 #### Mobile Show and Tell Meeting
 This is a monthly meeting, that occurs on the third Friday of every month. Members of the iOS and Android team talk about anything cool that they implemented recently. It could be using some new technology, some cool framework, a nice animation, a clever algorithm or anything similar to this. Traditionally, there's beer for presenters and attendees. 
 
+Besides the team meetings, we also have two more larger meetings we take part in.
+
+#### Monthely Tech Talks
+
+Thr Tech Talks is a monthly meeting where all our develoeprs and QA take part. Each month, another team has the agenda, and they talk about something relevant to their domain, but which can affect all of us. We try to maximize the knowledge sharing so we can all become better together. 
+
 #### Quarterly Company Catch-up
 
 This is a quarterly meeting, where the board tells all the employees how the company did in the last quarter and what our targets and short, mid and long-term plans are. You'll find out if the sales and production are on track, below or ahead of target, and anything else relevant to the company. It's not only a presentation, feel free to ask questions. 
