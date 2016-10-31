@@ -55,7 +55,7 @@ This is a quarterly meeting, where the board tells all the employees how the com
 - Ask [Jonas](https://nodes.slack.com/messages/@josc) to add you to Slack. Make sure to join the following channels: [#ios](https://nodes.slack.com/messages/ios), [#ios-core](https://nodes.slack.com/messages/ios-core), [#mobile](https://nodes.slack.com/messages/mobile), [#nodes-cph](https://nodes.slack.com/messages/nodes-cph) (if you're in Copenhagen), [#team-nodes-uk](https://nodes.slack.com/messages/team-nodes-uk) (if you're in London). Also join any project channel that you're working on.
 - Make sure to read the description of our [iOS stack on our engineering blog](https://engineering.nodesagency.com/our-stacks/ios/). That article goes hand in hand with this playbook here.
 - Make sure to read the [Nodes Handbook](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit) (private document). That is meant for all employees, and tells a bit of our history, how we got here, but also how we handle different tasks.
-- We love eating cake, and we hope you do too. We'll use any excuse to do it. So we'll ask you to have Simon add your birthday to the calendar, so we can get you a big birthday cake and celebrate.
+- We love eating cake, and we hope you do too. We'll use any excuse to do it. So we'll ask you to have [Simon](https://nodes.slack.com/messages/@siej) add your birthday to the calendar, so we can get you a big birthday cake and celebrate.
 - We have Facebook groups for internal semi-official announcements. Ask a colleague to add you to the groups. 
 
 # Tools We Use
