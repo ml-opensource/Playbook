@@ -20,8 +20,8 @@ We create lots of apps for our clients. Most of those apps rely heavily on web A
 We are currently in the process of abstracting parts of our codebase into open source libraries that can be reused in other projects. As well as this, we are trying to change our way of thinking for current and future projects and when we encounter a feature whose implementation can be reused in other projects we try to implement it as a separate component which we open source. We are just beginning, and it is a big change, but this is what we aim for in the long run.
 
 
-# Logistics
-We have two monthly meetings in the iOS team.
+# Team meetings
+Here are the recurring meetings the iOS team takes part in:
 
 #### iOS Team Meeting
 This is the main meeting in the iOS team, where we talk about the latest things happening in our team. General direction of the team, brief general team performance review, what people need help with, amount of workload, should we use or not _that_ framework, etc. This happens in the first Monday of each month. 
@@ -31,7 +31,7 @@ This is a monthly meeting, that occurs on the third Friday of every month. Membe
 
 Besides the team meetings, we also have two more larger meetings we take part in.
 
-#### Monthely Tech Talks
+#### Monthly Tech Talks
 
 Thr Tech Talks is a monthly meeting where all our develoeprs and QA take part. Each month, another team has the agenda, and they talk about something relevant to their domain, but which can affect all of us. We try to maximize the knowledge sharing so we can all become better together. 
 
