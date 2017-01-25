@@ -15,7 +15,7 @@ We try to increase our contribution to the iOS developer community through:
 - contributing back to some of the other open source libraries we use through issues and PRs
 - encouraging our team members to write tech articles about any topic they desire on our [engineering blog](https://engineering.nodesagency.com/)
 
-We create lots of apps for our clients. Most of those apps rely heavily on web APIs. We abstracted the common operations for working with web APIs, and that's how [Serializable](https://github.com/nodes-ios/Serializable) and [Cashier](https://github.com/nodes-ios/Cashier) were born. Another issue that was common in all the apps we do was handling keyboard appearance events. This led to the appearance of [KeyboardHelper](https://github.com/nodes-ios/KeyboardHelper).
+We create lots of apps for our clients. Most of those apps rely heavily on web APIs. We abstracted the common operations for working with web APIs, and that's how [Serpent](https://github.com/nodes-ios/Serpent) (formerly known as Serializable) and [Cashier](https://github.com/nodes-ios/Cashier) were born. Another issue that was common in all the apps we do was handling keyboard appearance events. This led to the appearance of [KeyboardHelper](https://github.com/nodes-ios/KeyboardHelper).
 
 We are currently in the process of abstracting parts of our codebase into open source libraries that can be reused in other projects. As well as this, we are trying to change our way of thinking for current and future projects and when we encounter a feature whose implementation can be reused in other projects we try to implement it as a separate component which we open source. We are just beginning, and it is a big change, but this is what we aim for in the long run.
 
