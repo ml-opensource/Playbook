@@ -23,7 +23,7 @@ This guide should help you with migrating projects on previous version of Swift 
     - Go through suggested changes to double check
 7. Go to Build Phases and modify current run scripts.
     - Update translations script as per [README](https://github.com/nodes-ios/nstack-translations-generator)
-    - Add or update script checking for TODO & FIXME
+    - Add or update script checking for TODO & FIXME ([gist here](https://gist.github.com/nickskull/2df890a021ada999bda383b8413c9473))
     - Add or update Carthage copy frameworks script with new names/frameworks
 8. Update build settings.
     - Enable whole module optimizations for release/adhoc
@@ -51,7 +51,7 @@ This guide should help you with migrating projects on previous version of Swift 
     - Small project description
     - Things to watch out for
     - Add test users if necessary 
-13. *(optional)* Implement CI, if applicable.
+13. *(optional)* Implement CI, if applicable (refer [here](playbook.md#Nodes-CI)).
 14. After you're done open a pull request to `develop` branch.
 	- Make sure that CI / other checks pass and someone does code-review
 	- After it gets merged, delete the feature branch
