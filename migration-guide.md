@@ -28,7 +28,7 @@ This guide should help you with migrating projects on previous version of Swift 
 8. Update build settings.
     - Enable whole module optimizations for release/adhoc
     - Enable bitcode if possible
-    - Remove unused/old custom keys
+    - Remove unused/old user-defined build settings (scroll to the bottom of build settings)
 9. Build and fix errors, rinse & repeat until project compiles. 😬
     - **Alamofire** 
 	    - Update completion type to `DataResponse`
