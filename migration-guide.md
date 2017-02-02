@@ -33,6 +33,7 @@ This guide should help you with migrating projects on previous version of Swift 
     - **Alamofire** 
 	    - Update completion type to `DataResponse`
 	    - Rename completion closure paramter to response instead of result
+	    - Requests have to start with the url, followed by method and other parameters
 	    - Switch on `response.result` instead of result
 	    - Update switch cases to `.success(let data)` and `.failure(let error)`
     - **Serpent**
@@ -42,6 +43,9 @@ This guide should help you with migrating projects on previous version of Swift 
     - **Blobfish**
 	    - Completely replace ErrorHandler or add error handling if not present
 	    - Properly setup blobs for token expired, connection error, unknown error
+    - **NStackSDK**
+	    - Replace `import NStack` with `import NStackSDK`
+	    - Start function now takes also a `launchOptions:` parameter
     - and more *(read documentation of frameworks)*
     - *(optional)* Refactor code to newer standards along the way (small changes)
 10. Fix as many (ideally all) warnings in the project, so that it's clean and updated. 
