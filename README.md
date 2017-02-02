@@ -90,6 +90,9 @@ Make sure to read our [**Swift Style Guide**](styleguide.md).
 # Nodes CI
 The Nodes CI is our new continuous integration tool. This was built mostly by Dominik, with help from Kasper. Since it's still new, we don't really use it in many of our projects. However, all the new projects should have CI set up. [Here](https://engineering.nodesagency.com/articles/iOS/Continuous-Integration-on-iOS-with-HockeyApp-and-Testflight-Deployment/) you can find an article about how we got to build our own CI system. [Here](https://git.nodescloud.com/ios/ci-template) you can find a template for implementing our CI in your project.
 
+# Swift Migration Guide
+
+A guide that shows how to migrate between different versions of Swift in our projects can be [found here](#migration-guide.md).
 
 # Working with Remote Colleagues
 Having one office in London, one in Copenhagen and one in Aarhus means you get to work with colleagues who are not in the same office as you are. If that is the case, make sure to rely as much as possible on Trello. 
