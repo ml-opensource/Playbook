@@ -30,7 +30,8 @@ This guide should help you with migrating projects on previous version of Swift 
     - Enable bitcode if possible
     - Remove unused/old user-defined build settings (scroll to the bottom of build settings)
 9. Build and fix errors, rinse & repeat until project compiles. 😬
-    - **Alamofire** 
+    - **Alamofire** ([official migration guide](https://github.com/Alamofire/Alamofire/blob/master/Documentation/Alamofire%204.0%20Migration%20Guide.md))
+	    - Change `Manager` to `SessionManager`
 	    - Update completion type to `DataResponse`
 	    - Rename completion closure paramter to response instead of result
 	    - Requests have to start with the url, followed by method and other parameters
