@@ -87,7 +87,7 @@ extension MainVC : UITableViewDataSource {
 * Don't prefix your classes or structs. Swift types are automatically namespaced by the module they're contained in, so there should be no collisions. 
 
 ## Classes and Structs
-Where it makes sense, use structs over classes. Unless you really need inheritance or Objective-C compatibility, it's probably advisable to use a struct and not a class.
+Where it makes sense, use structs over classes. Unless you really need inheritance or Objective-C compatibility, it's probably advisable to use a struct and not a class. And if you use classes but you don't need inheritance, consider making them `final`.
 
 ## Access control
 Specify access control to each top-level variable and functions. Don't expose methods and variables that don't need to be public. 
@@ -158,6 +158,7 @@ Remember you can also do things like
 ```
 * Try to have as few warnings as possible. Ideally, there would be no warnings. But we all know it's hard to have that. It's not a big deal if there are some warnings in the code, but fix right away warnings referring to usage of `var` for a variable that could've been a `let`, unused variables that can be replaced with `_`, unreachable code, or old syntax fo selectors.
 * Don't leave out commented code. Or if you feel you really need to, also leave a comment saying why that code is there and why it might be needed again. But in general, delete commented out code. We use git, so you can always get the old code from there.
+* If you need to check an enum case but you wouldn't want to do a switch for only one item, consider using something like `if case let .button = object.type { }`. It also works with associated values `if case let .button(value) = object.type { }`, and you can use `value` inside the `if`
 
 
 ## References
