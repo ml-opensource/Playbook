@@ -44,7 +44,7 @@ This is a quarterly meeting, where the board tells all the employees how the com
 
 # Your First Day
 - Join [our private git](https://git.nodescloud.com) and ask [Dominik](https://nodes.slack.com/messages/@doha) to add you to the correct groups.
-- Get the cert sign request and private key from [this private repo here](https://git.nodescloud.com/ios/Keyring). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
+- Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
 - Get another iOS developer to invite you to our developer account.
 - We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://git.nodescloud.com) and our public ones are on [GitHub](https://github.com/nodes-ios).
