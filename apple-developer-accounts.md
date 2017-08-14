@@ -7,7 +7,6 @@
 ### Admins: 
 * AMT 
 * iOS Platform Lead 
-* Operations 
 
 ### Members:
 * Developers actively working on the project
@@ -20,8 +19,6 @@ AMT will add developers as members to the project team when they join the projec
 ### iOS Platform Lead
 The lead is in charge of the activities that require admin rights. This includes generating production certificates and profiles, approving signing requests. When a project is started, the lead will create the distribution certificate and profile and commit them to the project git repository. 
 
-### Operations
-Operations is the fail-safe, in case the lead or AMT are unavailable
 
 # iTunes Connect Accounts
 
