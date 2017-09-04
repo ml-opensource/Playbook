@@ -43,7 +43,7 @@ This is a quarterly meeting, where the board tells all the employees how the com
 
 
 # Your First Day
-- Join [our private git](https://git.nodescloud.com) and ask [Dominik](https://nodes.slack.com/messages/@doha) to add you to the correct groups.
+- Join [our private git](https://git.nodescloud.com) and ask [Chris](https://nodes.slack.com/messages/@chco) to add you to the correct groups.
 - Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
 - Get another iOS developer to invite you to our developer account.
@@ -88,7 +88,7 @@ Make sure to read our [**Swift Style Guide**](styleguide.md).
 
 
 # Nodes CI
-The Nodes CI is our new continuous integration tool. This was built mostly by Dominik, with help from Kasper. Since it's still new, we don't really use it in many of our projects. However, all the new projects should have CI set up. [Here](https://engineering.nodesagency.com/articles/iOS/Continuous-Integration-on-iOS-with-HockeyApp-and-Testflight-Deployment/) you can find an article about how we got to build our own CI system. [Here](https://git.nodescloud.com/ios/ci-template) you can find a template for implementing our CI in your project.
+The Nodes CI is our new continuous integration tool. Since it's still new, we don't really use it in many of our projects. However, all the new projects should have CI set up. [Here](https://engineering.nodesagency.com/articles/iOS/Continuous-Integration-on-iOS-with-HockeyApp-and-Testflight-Deployment/) you can find an article about how we got to build our own CI system. [Here](https://git.nodescloud.com/ios/ci-template) you can find a template for implementing our CI in your project.
 
 # Swift Migration Guide
 
