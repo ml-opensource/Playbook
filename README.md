@@ -29,12 +29,6 @@ This is the main meeting in the iOS team, where we talk about the latest things 
 #### Mobile Show and Tell Meeting
 This is a monthly meeting, that occurs on the third Friday of every month. Members of the iOS and Android team talk about anything cool that they implemented recently. It could be using some new technology, some cool framework, a nice animation, a clever algorithm or anything similar to this. Traditionally, there's beer for presenters and attendees. 
 
-Besides the team meetings, we also have two more larger meetings we take part in.
-
-#### Monthly Tech Talks
-
-Thr Tech Talks is a monthly meeting where all our develoeprs and QA take part. Each month, another team has the agenda, and they talk about something relevant to their domain, but which can affect all of us. We try to maximize the knowledge sharing so we can all become better together. 
-
 #### Quarterly Company Catch-up
 
 This is a quarterly meeting, where the board tells all the employees how the company did in the last quarter and what our targets and short, mid and long-term plans are. You'll find out if the sales and production are on track, below or ahead of target, and anything else relevant to the company. It's not only a presentation, feel free to ask questions. 
@@ -43,16 +37,14 @@ This is a quarterly meeting, where the board tells all the employees how the com
 
 
 # Your First Day
-- Join [our private git](https://git.nodescloud.com) and ask [Chris](https://nodes.slack.com/messages/@chco) to add you to the correct groups.
+- Join [our private git](https://github.com/nodes-projects) and ask [Chris](https://nodes.slack.com/messages/@chco) to add you to the correct groups.
 - Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
 - Get another iOS developer to invite you to our developer account.
-- We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://git.nodescloud.com) and our public ones are on [GitHub](https://github.com/nodes-ios).
+- We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://github.com/nodes-projects) and our public ones are on [GitHub](https://github.com/nodes-ios).
 - Set up your git keys properly, so you can pull and push from both git servers.
 - Ask an iOS colleague to invite you to Hockey
-- Ask [Casper](https://nodes.slack.com/messages/@cr) for access to Postman
-- Have a project manager add you to our Trello organisation
-- Ask [Jonas](https://nodes.slack.com/messages/@josc) to add you to Slack. Make sure to join the following channels: [#ios](https://nodes.slack.com/messages/ios), [#ios-core](https://nodes.slack.com/messages/ios-core), [#mobile](https://nodes.slack.com/messages/mobile), [#nodes-cph](https://nodes.slack.com/messages/nodes-cph) (if you're in Copenhagen), [#team-nodes-uk](https://nodes.slack.com/messages/team-nodes-uk) (if you're in London). Also join any project channel that you're working on.
+- You should have been invited to our Slack, Trello, and Postman accounts. Talk to [Sigurd](https://nodes.slack.com/messages/@sikr) if you're missing access.
 - Make sure to read the description of our [iOS stack on our engineering blog](https://engineering.nodesagency.com/our-stacks/ios/). That article goes hand in hand with this playbook here.
 - Make sure to read the [Nodes Handbook](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit) (private document). That is meant for all employees, and tells a bit of our history, how we got here, but also how we handle different tasks.
 - We love eating cake, and we hope you do too. We'll use any excuse to do it. So we'll ask you to have [Simon](https://nodes.slack.com/messages/@siej) add your birthday to the calendar, so we can get you a big birthday cake and celebrate.
