@@ -56,7 +56,7 @@ This guide should help you with migrating projects on previous version of Swift 
     - Small project description
     - Things to watch out for
     - Add test users if necessary 
-13. *(optional)* Implement CI, if applicable (refer [here](playbook.md#Nodes-CI)).
+13. *(optional)* Implement CI, if applicable (refer [here](https://github.com/nodes-projects/ci-test-ios)).
 14. After you're done open a pull request to `develop` branch.
 	- Make sure that CI / other checks pass and someone does code-review
 	- After it gets merged, delete the feature branch
