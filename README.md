@@ -84,7 +84,7 @@ The Nodes CI is our new continuous integration tool. Since it's still new, we do
 
 # Swift Migration Guide
 
-A guide that shows how to migrate between different versions of Swift in our projects can be [found here](#migration-guide.md).
+A guide that shows how to migrate between different versions of Swift in our projects can be [found here](https://github.com/nodes-ios/Playbook/blob/master/migration-guide.md).
 
 # Working with Remote Colleagues
 Having one office in London, one in Copenhagen and one in Aarhus means you get to work with colleagues who are not in the same office as you are. If that is the case, make sure to rely as much as possible on Trello. 
