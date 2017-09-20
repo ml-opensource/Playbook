@@ -5,8 +5,7 @@
 ## Roles
 
 ### Admins: 
-* AMT 
-* iOS Platform Lead 
+* AMT + iOS Platform Lead 
 
 ### Members:
 * Developers actively working on the project
