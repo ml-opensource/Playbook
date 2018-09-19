@@ -44,7 +44,7 @@ This is a quarterly meeting, where the board tells all the employees how the com
 - We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://github.com/nodes-projects) and our public ones are on [GitHub](https://github.com/nodes-ios).
 - Set up your git keys properly, so you can pull and push from both git servers.
 - Ask an iOS colleague to invite you to Hockey
-- You should have been invited to our Slack, Trello, and Postman accounts. Talk to [Sigurd](https://nodes.slack.com/messages/@sikr) if you're missing access.
+- You should have been invited to our Slack, Trello, and Postman accounts. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
 - Make sure to read the description of our [iOS stack on our engineering blog](https://engineering.nodesagency.com/our-stacks/ios/). That article goes hand in hand with this playbook here.
 - Make sure to read the [Nodes Handbook](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit) (private document). That is meant for all employees, and tells a bit of our history, how we got here, but also how we handle different tasks.
 - We love eating cake, and we hope you do too. We'll use any excuse to do it. So we'll ask you to have [Simon](https://nodes.slack.com/messages/@siej) add your birthday to the calendar, so we can get you a big birthday cake and celebrate.
