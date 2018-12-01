@@ -10,7 +10,10 @@ These guidelines will, of course, not cover every aspect of writing Swift code. 
 
 Always adhere to the Swift official [API design guidelines](https://swift.org/documentation/api-design-guidelines/).
 
-We are in the process of adopting a standard Clean Architecture pattern for all the new projects we do. It is possible that some of the existing guidelines here will conflict with the new approach we are trying. It is too early now to write guidelines for that, but as soon as we have a clear agreement on some standards for the new Clean Architecture approach, we will write them down.
+**[UPDATE]**We are in the process of adopting a standard Clean Architecture pattern for all the new projects we do. It is possible that some of the existing guidelines here will conflict with the new approach we are trying. It is too early now to write guidelines for that, but as soon as we have a clear agreement on some standards for the new Clean Architecture approach, we will write them down.
+
+TODO: 	Models layout, Actions enums vs protocol methods, Display data, ? 
+
 
 ## Structure
 
@@ -18,19 +21,21 @@ We are in the process of adopting a standard Clean Architecture pattern for all 
 
 The following guidelines (most of which will be repeated further down in this document) should give you some tips that will make it easier for you to navigate through the project.
 
-* We usually name the class that takes care of the networking layer `ConnectionManager`. 
+* **[UPDATE]**We usually name the class that takes care of the networking layer `ConnectionManager`. 
 * The models will have descriptive, simple names: `User`, `Post`, `NewsItem`, `Bird`, etc. 
-* Usually, anything that is not a model should have some suffix indicating what it is: `RoundedButton`, `CacheManager`, `DeepLinkManager`. There are a few exceptions. Some of our projects use a `Router` which takes care of the screen flow in the app, for example.
+* Usually, anything that is not a model should have some suffix indicating what it is: `RoundedButton`, `CacheManager`, `DeepLinkManager`. There are a few exceptions. **[UPDATE]**Some of our projects use a `Router` which takes care of the screen flow in the app, for example.
 * All the custom views should end in `View`: `NewsItemView`, `PensionItemView`, etc. This clearly separates them from the model but also indicates what that view does.
-* Similarly, all custom buttons end in `Button`, all custom cells end in `Cell`, all custom labels end in `Label`, all custom something ends in that something. 
-* All view controllers end in `VC`. `LoginVC`, `TermsVC`, `HelpVC`, etc. We prefer `VC` over `ViewController` because it's shorter
+* **[UPDATE]**Similarly, all custom buttons end in `Button`, all custom cells end in `Cell`, all custom labels end in `Label`, all custom something ends in that something. 
+* **[UPDATE]**All view controllers end in `VC`. `LoginVC`, `TermsVC`, `HelpVC`, etc. We prefer `VC` over `ViewController` because it's shorter
 
 ### File
 
-Use `//MARK: - ` comments to separate the different parts of your code. 
+Use `// MARK: - ` comments to separate the different parts of your code. 
+
+**[UPDATE]**
 
 ```swift
-class MainVC : UIViewController {
+class MainViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var scrollView: UIScrollView!
     //...
@@ -61,18 +66,47 @@ class MainVC : UIViewController {
     
 }
 ```
-Of course, you can use other `//MARK: -` comments too, as long as they are easy to understand and improve the readability of the code.
+Of course, you can use other `// MARK: -` comments too, as long as they are easy to understand and improve the readability of the code.
+
+
+### Line length
+
+Page guide at column: 100 (testing)
+
+**[UPDATE]**
+Examples:
+
+```swift 
+tableView.tableHeaderView = UIView(
+	frame: CGRect(
+		x: 0, 
+		y: 0, 
+		width: 0, 
+		height: 0
+	)
+)
+
+func tableView(
+	_ tableView: UITableView, 
+	cellForRowAt indexPath: IndexPath
+) -> UITableViewCell { 
+	...
+}
+
+
+
+```
 
 ## Extensions
-When adding a protocol implementation to a class or struct, add a separate extension for the protocol methods and use the `//MARK: - ` comment. This increases the readability of the code. 
+When adding a protocol implementation to a class or struct, add a separate extension for the protocol methods and use the `// MARK: - ` comment. This increases the readability of the code. 
 
 ```swift
-class MainVC : UIViewController {
+class MainViewController: UIViewController {
     // ...
 }
 
 // MARK: - UITableViewDataSource
-extension MainVC : UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     // table view data source methods
 }
 ```
@@ -80,9 +114,9 @@ extension MainVC : UITableViewDataSource {
 ## Naming
 * The classes, structs, protocols, methods, variables, etc. must have descriptive names. 
 * Method names and variables must start with a lower case letter. 
-* Classes, structs, type names, enums should be capitalised. 
+* Classes, structs, type names, enums should be capitalized. 
 * The name of a variable should be enough to tell another programmer what that variable does. Don't use variable names such as `number`, `a`, `b`, `x`, `button`, `label`, etc. 
-* To adhere to the Swift 3 syntax, all enum cases will be lowerCamelCase and not UpperCamelCase as before. 
+* **[UPDATE]**To adhere to the Swift 3 syntax, all enum cases will be lowerCamelCase and not UpperCamelCase as before. 
 * Don't use snake_case.
 * Don't prefix your classes or structs. Swift types are automatically namespaced by the module they're contained in, so there should be no collisions. 
 
@@ -100,7 +134,7 @@ However, please don't set the fonts and colors in the storyboard. It's ok to do 
 ## Colors and fonts
 Create categories for UIFont and UIColor with the app's fonts and colors. Zeplin helps with that, and you can export the categories directly from there. 
 
-Always set the fonts and colors in code, using the ones from the categories. A good place to do that is in the `didSet` of the `IBOutlet`s or variables.
+**[UPDATE]**Always set the fonts and colors in code, using the ones from the categories. A good place to do that is in the `didSet` of the `IBOutlet`s or variables.
 
 Setting them in code allows you to change them really quickly and easily, in all the appropriate places, if it's decided for example to change a color with a darker one. 
 
@@ -127,10 +161,10 @@ print(Constants.Math.pi)
 ```
 * Don't write unnecessary code. That includes declaring types that can be inferred or using shortcut versions of type declarations (`[String]` instead of `Array<String>`).
 * Avoid using `self` where it doesn't need to be used.
-* Use computed properties over functions if the operation can be done in O(1). For example
+* **[UPDATE]**Use computed properties over functions if the operation can be done in O(1). For example
 
 ```swift
-var diameter {
+var diameter: Float {
     return radius * 2
 }
 ```
@@ -142,12 +176,27 @@ func diameter() -> Float {
 }
 ```
 
-* Avoid pyramids of doom. Unwrap multiple optionals on the same line and mix it with logical conditions as needed.
+* **[UPDATE]**Avoid pyramids of doom. Unwrap multiple optionals on the same line and mix it with logical conditions as needed.
 
  ```swift
- if let age = age, let name = name, name.characters.count > 0, age.characters.count > 0 {
+ if 
+ 	let age = age, 
+ 	let name = name, 
+ 	name.characters.count > 0, 
+ 	age.characters.count > 0
+ {
      //...
  }
+ 
+ guard 
+ 	let age = age, 
+ 	let name = name, 
+ 	!name.isEmpty, 
+ 	!age.name.isEmpty
+ else { 
+     //...
+ }
+
 ```
 Remember you can also do things like
 
@@ -156,11 +205,15 @@ Remember you can also do things like
      //...
  }
 ```
-* Try to have as few warnings as possible. Ideally, there would be no warnings. But we all know it's hard to have that. It's not a big deal if there are some warnings in the code, but fix right away warnings referring to usage of `var` for a variable that could've been a `let`, unused variables that can be replaced with `_`, unreachable code, or old syntax fo selectors.
-* Don't leave out commented code. Or if you feel you really need to, also leave a comment saying why that code is there and why it might be needed again. But in general, delete commented out code. We use git, so you can always get the old code from there.
+* **[UPDATE]**Try to have as few warnings as possible. Ideally, there would be no warnings. But we all know it's hard to have that. It's not a big deal if there are some warnings in the code, but fix right away warnings referring to usage of `var` for a variable that could've been a `let`, unused variables that can be replaced with `_`, unreachable code, or old syntax fo selectors.
+* Don't leave commented code in. Or if you feel you really need to, also leave a comment saying why that code is there and why it might be needed again. But in general, delete commented out code. We use git, so you can always get the old code from there.
 * If you need to check an enum case but you wouldn't want to do a switch for only one item, consider using something like `if case let .button = object.type { }`. It also works with associated values `if case let .button(value) = object.type { }`, and you can use `value` inside the `if`
 
 
+### Delegation
+
+TODO: 
+
 ## References
-* [Swift API Design Guideliens](https://swift.org/documentation/api-design-guidelines/)
+* [Swift API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
 * [Ray Wenderlich Swift style guide](https://github.com/raywenderlich/swift-style-guide)
