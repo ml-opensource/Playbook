@@ -107,7 +107,11 @@ extension MainViewController: UITableViewDataSource {
 Where it makes sense, use structs over classes. Unless you really need inheritance or Objective-C compatibility, it's probably advisable to use a struct and not a class. And if you use classes but you don't need inheritance, consider making them `final`.
 
 ## Access control
-Specify access control to each top-level variable and functions, specifically `private`. Don't expose methods and variables that don't need to be public. `internal` is not required since it is added by default. 
+Specify `private` functions and variables when applicable. Variables can almost always be `private` and injected via the initializer if needed. Computed properties are potentially an exception. Helper functions should be `private` if they are not called from outside the class.
+
+The distinction between `open` `public` and `internal` is not as important for our development style at the moment so specifying `internal` is not necessary.
+
+As of Swift 4, `fileprivate` is rarely required. 
 
 ## Storyboards and nibs
 This is a conflicting topic in the iOS community. We encourage usage of Storyboards and Nibs. They help a new developer on the project understand the screen flow and the codebase and see the bigger picture faster than if they just read the code. The template will automatically create them for you for your viewcontrollers.
@@ -191,7 +195,7 @@ Remember you can also do things like
  
 ```
 
-* Comments are for "why" not "what". Don't explain what a function does with a comment, that's what documentation is for. Leave comments in code that explain why you made the decision you made. 
+* Comments are for "why" and not just "what". It is often more helpful to explain why you made a complicated decision than to describe step-by-step what is going on. 
 * Don't introduce new warnings. Sometimes warnings are understandable, if they come from a framework, shown as a //TODO, or were already in the project when you took over. But your code should always have the warnings resolved. A project *can* have 0 warnings.
 * Don't leave commented code in. Or if you feel you really need to, also leave a comment saying why that code is there and why it might be needed again. But in general, delete commented out code. We use git, so you can always get the old code from there.
 * If you need to check an enum case but you wouldn't want to do a switch for only one item, consider using something like `if case let .button = object.type { }`. It also works with associated values `if case let .button(value) = object.type { }`, and you can use `value` inside the `if`
