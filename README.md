@@ -81,7 +81,7 @@ Make sure to read our [**Swift Style Guide**](styleguide.md).
 
 # Continuous Integration (CI)
 
-As a digital agency we build hundreds of apps during the day and to manage all these builds we are using Bitrise as a CI tool to speed up our development process and manage our client's certificates.
+As a digital agency we build hundreds of apps during the day and to manage all these builds we are using Bitrise as a CI tool to speed up our deployment process and [Match](https://docs.fastlane.tools/actions/match/) + Github to manage our client's certificates.
 
 Please find below the steps to configure your project.
 
