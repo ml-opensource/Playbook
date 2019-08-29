@@ -1,5 +1,5 @@
 # Nodes iOS CI - Guide
-git
+
 ## Configuration ⚙️
 
 We have two levels of configuration on [project.yml](./project.yml) file.
