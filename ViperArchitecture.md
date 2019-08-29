@@ -63,7 +63,7 @@ Eg.: The interactor makes a API call and receives the json file. The data will b
 
 ## Flow control
 
-![](./NodesViperFlow.png)
+![](./images/nodes-viper-flow.png)
 
 ## Protocols
 

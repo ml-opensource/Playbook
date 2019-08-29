@@ -79,8 +79,17 @@ The way we do localisation in Nodes is a bit different than in other places. We 
 Make sure to read our [**Swift Style Guide**](styleguide.md).  
 
 
-# Nodes CI
-The Nodes CI is our new continuous integration tool. Since it's still new, we don't really use it in many of our projects. However, all the new projects should have CI set up. [Here](https://engineering.nodesagency.com/articles/iOS/Continuous-Integration-on-iOS-with-HockeyApp-and-Testflight-Deployment/) you can find an article about how we got to build our own CI system. [Here](https://git.nodescloud.com/ios/ci-template) you can find a template for implementing our CI in your project.
+# Continuous Integration
+
+As a digital agency we build hundreds of apps during the day and to manage all these builds we are using Bitrise as a CI tool to speed up our development process and manage our client's certificates.
+
+Once you get access to Bitrise the creation process is straightforward and most of it is automatic if you have attached your github account to your Bitrise account. 
+
+[Here](./ci/bitrise-setup-readme.md) you will find a configuration guide to help you setting up your project on Bitrise.
+
+If you already have a project created an you just need to deploy it to Bitrise you'll need to add the configuration file `project.yml` to the root of your project. In case you need to add or change any configuration but are unsure how to do that please refer to this [document](./ci/bitrise-config-readme.md).
+
+We also listed the most common issues when Bitrise is trying to make the builds. Please check the [common issues document](./ci/bitrise-issues-readme.md) if you are having some problems.
 
 # Swift Migration Guide
 
