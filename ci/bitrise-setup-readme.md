@@ -20,10 +20,14 @@ Make sure your project's schemes are ***shared (including app extensions)*** , o
   <img src="../images/ci/02-new-app-bitrise.jpg?raw=true" alt="New App"/>
 </p> 
 
-3) When setting up the access make sure to auto-add SSH key
+3) When setting up the access make sure to add our private key.
 
 <p align="center">
-  <img src="../images/ci/03-new-app-bitrise.jpg?raw=true" alt="New App"/>
+  <img src="../images/ci/03-A-new-app-bitrise.jpg?raw=true" alt="New App"/>
+</p> 
+
+<p align="center">
+  <img src="../images/ci/03-B-new-app-bitrise.jpg?raw=true" alt="New App"/>
 </p> 
 
 4) Indicate which branch Bitrise should use to make the builds

@@ -79,15 +79,23 @@ The way we do localisation in Nodes is a bit different than in other places. We 
 Make sure to read our [**Swift Style Guide**](styleguide.md).  
 
 
-# Continuous Integration
+# Continuous Integration (CI)
 
 As a digital agency we build hundreds of apps during the day and to manage all these builds we are using Bitrise as a CI tool to speed up our development process and manage our client's certificates.
+
+Please find below the steps to configure your project.
+
+***1) Creating a new project on Bitrise***
 
 Once you get access to Bitrise the creation process is straightforward and most of it is automatic if you have attached your github account to your Bitrise account. 
 
 [Here](./ci/bitrise-setup-readme.md) you will find a configuration guide to help you setting up your project on Bitrise.
 
+***2) Integrating into your Xcode project***
+
 If you already have a project created an you just need to deploy it to Bitrise you'll need to add the configuration file `project.yml` to the root of your project. In case you need to add or change any configuration but are unsure how to do that please refer to this [document](./ci/bitrise-config-readme.md).
+
+***3) Troubleshooting***
 
 We also listed the most common issues when Bitrise is trying to make the builds. Please check the [common issues document](./ci/bitrise-issues-readme.md) if you are having some problems.
 
