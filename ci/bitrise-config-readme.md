@@ -1,8 +1,8 @@
 # Nodes iOS CI - Guide
-
+git
 ## Configuration ⚙️
 
-We have two levels of configuration on [project.yml](../project.yml) file.
+We have two levels of configuration on [project.yml](./project.yml) file.
 In the first level we have the information regarding the whole project and the second level is **Target** specific.
 
 According to the configuration you'll tell the CI to make builds for different targets, extensions and configurations.
