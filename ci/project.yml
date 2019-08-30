@@ -1,0 +1,16 @@
+# This is the project config file
+xcodeproj: "REPLACE_PROJECT_NAME.xcodeproj"
+configuration: "Test" # Possible configurations: Debug | Test | Release 
+ci-version: 1.0
+hockey-upload: true
+testflight-upload: false
+slack-channel: "REPLACE_SLACK_CHANNEL" # replace with your project's Slack Channel name
+targets:
+  REPLACE_PROJECT_NAME:
+    enabled: true
+    scheme: "REPLACE_PROJECT_NAME"
+    hockey-app-id:
+      Debug: "REPLACE_HOCKEY_DEVELOPMENT"
+      Test: "REPLACE_HOCKEY_STAGING"
+      Release: "REPLACE_HOCKEY_PRODUCTION"
+   
