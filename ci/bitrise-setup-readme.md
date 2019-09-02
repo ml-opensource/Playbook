@@ -26,7 +26,7 @@ Make sure your project's schemes are ***shared (including app extensions)*** , o
   <img src="../images/ci/02-new-app-bitrise.jpg?raw=true" alt="New App"/>
 </p> 
 
-3) When setting up the access make sure to add our SSH key. The key can be found on [ci-resources-ios](https://github.com/nodes-projects/ci-resources-ios/blob/master/privatekey)
+3) When setting up the access make sure to add our SSH key using the private key found in the [ci-resources-ios](https://github.com/nodes-projects/ci-resources-ios/blob/master/privatekey) repository.
 
 <p align="center">
   <img src="../images/ci/03-new-app-bitrise.jpg?raw=true" alt="New App"/>
