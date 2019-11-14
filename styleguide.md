@@ -10,7 +10,7 @@ These guidelines will, of course, not cover every aspect of writing Swift code. 
 
 Always adhere to the Swift official [API design guidelines](https://swift.org/documentation/api-design-guidelines/).
 
-Check out [this readme](https://github.com/nodes-ios/VIPERCoordinatorsXcodeFileTemplate/blob/master/HOWWEUSE.md) and [this talk by @doha](https://slideslive.com/38908270/architecting-your-app-with-viper-effectively) for an explanation of how we use VIPER architecture at Nodes.
+Check out [this readme](https://github.com/nodes-ios/VIPERCoordinatorsXcodeFileTemplate/blob/master/README.md) and [this talk by @doha](https://slideslive.com/38908270/architecting-your-app-with-viper-effectively) for an explanation of how we use VIPER architecture at Nodes.
 
 The template should provide most of the style reference you should follow when adopting this architecture. 
 
