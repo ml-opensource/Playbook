@@ -18,6 +18,7 @@ According to the configuration you'll tell the CI to make builds for different t
 - **disable-hockey-version-check: Bool** - Disable Hockey version check to avoid errors when build number <= current build number on Hockey. Not required, defaults to `false`
 - **slack-channel: String** - The name of the channel to report successful builds to.❗️
 - **targets: [String: Target]** - List of target settings.❗️
+- **firebase-test-groups: String** - Firebase test groups eg: "nodes" or "nodes, client"
 
 
 #### Second level - Target
