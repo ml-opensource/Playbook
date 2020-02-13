@@ -29,7 +29,7 @@ This is a monthly meeting, that occurs on the fourth Friday of every month. Anyo
 
 #### Monthly Briefing
 
-This is a monthly meeting, where the management tells all the employees how the company did in the last month and what our targets and short, mid and long-term plans are. Topics covered are sales, projects, cases, tech, events, staff and others.
+This is a monthly meeting, where the management tells all the employees how the company did in the last month and what our targets and short, mid and long-term plans are. Topics covered are sales, projects, cases, tech, events, staff and others. The meeting is held in the Copenhagen office, but other offices can join in by video call.
 
 
 # Your First Day
