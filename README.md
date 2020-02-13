@@ -92,9 +92,6 @@ If you already have a project created an you just need to deploy it to Bitrise y
 
 We also listed the most common issues when Bitrise is trying to make the builds. Please check the [common issues document](./ci/bitrise-issues-readme.md) if you are having some problems.
 
-# Swift Migration Guide
-
-A guide that shows how to migrate between different versions of Swift in our projects can be [found here](https://github.com/nodes-ios/Playbook/blob/master/migration-guide.md).
 
 # Working with Remote Colleagues
 
@@ -111,3 +108,11 @@ If you need something (an image asset, some input from the PM, etc), make a JIRA
 If there's some feedback from the client but you're not sure what to do about it, because there are multiple options, comment on the JIRA issue presenting what options there are, estimating how much time each of it would take and maybe advising towards one of it and ask the PM to take the decision.
 
 If in doubt, ask for a video call to discuss things. However, try to write down the notes / conclusions of the meeting, so you have them in writing. This helps you not forget anything and it also helps to align everyone on the team to the same conclusion.
+
+# Further reading
+
+* [VIPER architecture](./ViperArchitecture.md)
+* [Modular architecture](./ModularArchitecture.md)
+* [Code Modes](https://github.com/nodes-projects/readme/blob/master/mobile/ios/code-modes.md) (private document)
+* [Securing your app](https://github.com/nodes-projects/readme/tree/master/security) (private document)
+* Consider joining one or more of our [squads](https://github.com/nodes-projects/squads) (private document)
