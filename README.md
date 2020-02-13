@@ -33,7 +33,7 @@ This is a monthly meeting, where the management tells all the employees how the 
 
 
 # Your First Day
-- Meet with the [Head of iOS](https://nodes.slack.com/messages/@chco), your [manager](https://nodes.slack.com/messages/@mofa) and your Nodes Buddy.
+
 - Join [our private git](https://github.com/nodes-projects) and ask [Chris](https://nodes.slack.com/messages/@chco) to add you to the correct groups.
 - Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
