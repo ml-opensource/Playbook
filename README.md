@@ -34,15 +34,17 @@ This is a monthly meeting, where the management tells all the employees how the 
 
 # Your First Day
 
-- Join [our private git](https://github.com/nodes-projects) and ask [Chris](https://nodes.slack.com/messages/@chco) to add you to the correct groups.
+The IT department is responsible for setting up accounts and giving you access to the tools you need to do your job. The easiest way to contact the IT departmentis by using the `/halp` command on Slack.
+
+- Join [our private git](https://github.com/nodes-projects). Ask IT if you don't have access.
 - Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
 - Get another iOS developer to invite you to our developer accounts.
 - We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://github.com/nodes-projects) and our public ones are on [GitHub](https://github.com/nodes-ios).
 - Set up your git keys properly, so you can pull and push from both git servers.
-- You should have been invited to our Slack, JIRA, and Postman accounts. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
+- You should have been invited to our Slack, JIRA, and Postman accounts. Ask IT if you don't have access.
 - Make sure to read the [Nodes Handbook](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit) (private document). That is meant for all employees, and tells a bit of our history, how we got here, but also how we handle different tasks.
-- We use [Happeo](https://app.happeo.com/home) for internal (semi)official announcements. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
+- We use [Happeo](https://app.happeo.com/home) for internal (semi)official announcements. Ask IT if you don't have access.
 
 # Tools We Use
 Our main communication tool is [**Slack**](https://nodes.slack.com). We use this for daily communication.
@@ -55,11 +57,11 @@ With the same JIRA account you will also have access to Confluence, where you ca
 
 Harvest goes well hand in hand with [**Forecast**](https://forecastapp.com/). Use Forecast to see what project you're assigned to that day. Forecast is our planning tool, you can see what other people are assigned to, how long a project should take, when other people are on vacation, etc. On a higher level, Harvest and Forecast are very well integrated and Project Managers can see if a project goes over budget (more hours were harvested than allocated in Forecast). But that's not something you as a developer should care about.
 
-[**Postman**](https://www.getpostman.com/) is a great tool which helps you see and test web APIs. Our backend team uses Postman to test and document their APIs, so all the web APIs for our apps can be found in Postman. You can use it to see the different endpoints available, read their documentation or make requests to those endpoints. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
+[**Postman**](https://www.getpostman.com/) is a great tool which helps you see and test web APIs. Our backend team uses Postman to test and document their APIs, so all the web APIs for our apps can be found in Postman. You can use it to see the different endpoints available, read their documentation or make requests to those endpoints. Ask IT if you don't have access.
 
 Our design team uses Sketch. But you, as a developer, don't need to have Sketch installed. To ease the collaboration between designers and developers, we use [**Zeplin**](https://zeplin.io/). In Zeplin, you can see each screen in the design, get info about the sizes, padding, fonts, colours and also export assets for the mobile devices. You can also add notes in Zeplin and communicate with your designer directly on the project.
 
-[**Charles**](https://www.charlesproxy.com/) is an HTTP proxy. You can set your phone / simulator to proxy through Charles and you can see all the API calls it made, you can inspect its requests or responses. It comes in very handy especially if you work with an external, poorly documented API. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you need a license.
+[**Charles**](https://www.charlesproxy.com/) is an HTTP proxy. You can set your phone / simulator to proxy through Charles and you can see all the API calls it made, you can inspect its requests or responses. It comes in very handy especially if you work with an external, poorly documented API. Ask IT if you need a license.
 
 For in-house distribution and crash reporting, we use [**Firebase**](firebase.google.com/). Depensing on the project, sometimes we only use TestFlight. Talk to your PM or with previous developers on that project.
 
