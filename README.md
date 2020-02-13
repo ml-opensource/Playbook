@@ -55,7 +55,7 @@ Our main communication tool is [**Slack**](https://nodes.slack.com). We use this
 
 Our main project management tool is [**JIRA**](https://nodesagency.atlassian.net/jira/). Each project has its own JIRA board. Always keep your project's JIRA board up to date to reflect the current status of the project. We work in an agile manner and move fast, but the JIRA board must clearly reflect the project's status. Ask [Simon](https://nodes.slack.com/messages/@siej) or your project manager if you have questions.
 
-With the same JIRA account you will also have access to Confluence, where you can find project-related documentation, and also internal docuements.
+With the same JIRA account, you will also have access to Confluence, where you can find project-related documentation, and also internal documents.
 
 [**Harvest**](https://nodes.harvestapp.com/) is the time tracking tool that we use. It helps us see how much time one person has worked on a project. Make sure to always harvest on the appropriate project. Ask the PM on which Harvest project you should track the time. We expect you to harvest 7.5 hours per day. Lunch time is not harvested, and it doesn't count towards the 7.5 hours per day. And if you want more detailed instructions on how to harvest, ask [Simon](https://nodes.slack.com/messages/@siej). You can also set up auto-harvesting in you Ournodes acount and it will automatically harvest 7.5 hours per day on the project youre assigned to.
 
