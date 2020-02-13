@@ -67,7 +67,7 @@ Our design team uses Sketch. But you, as a developer, don't need to have Sketch 
 
 [**Charles**](https://www.charlesproxy.com/) is an HTTP proxy. You can set your phone / simulator to proxy through Charles and you can see all the API calls it made, you can inspect its requests or responses. It comes in very handy especially if you work with an external, poorly documented API. Ask IT if you need a license.
 
-For in-house distribution and crash reporting, we use [**Firebase**](firebase.google.com/). Depensing on the project, sometimes we only use TestFlight. Talk to your PM or with previous developers on that project.
+For in-house distribution and crash reporting, we use [**Firebase**](firebase.google.com/). Depending on the project, sometimes we only use TestFlight. Talk to your PM or with previous developers on that project.
 
 We had been using [**Carthage**](https://github.com/Carthage/Carthage) for a long time to manage our dependencies on iOS. We chose Carthage over CocoaPods because for us, this is the one that brought the most advantages. But since we started using Firebase more and more and Google pushes strongly for CocoaPods, we sometimes use both in the same project. We appreciate all the effort put into Carthage, as well as into CocoaPods, and we're looking for the right time to switch to Swift Package Manager as our default dependency manager for iOS projects.
 
