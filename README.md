@@ -13,7 +13,7 @@ We try to increase our contribution to the iOS developer community through:
 - encouraging our team members to join iOS related meetups, groups and conferences
 - encouraging our team members to speak at iOS events
 - contributing back to some of the other open source libraries we use through issues and PRs
-- encouraging our team members to write tech articles about any topic they desire on our [engineering blog](https://engineering.nodesagency.com/)
+- encouraging our team members to write tech articles about any topic they desire on our [engineering blog](https://engineering.nodesagency.com/); if needed, we can also suggest topics for new articles
 
 We create lots of apps for our clients. Most of those apps rely heavily on web APIs. We abstracted the common operations for working with web APIs, and that's how [Serpent](https://github.com/nodes-ios/Serpent) (formerly known as Serializable) and [Cashier](https://github.com/nodes-ios/Cashier) were born. Another issue that was common in all the apps we do was handling keyboard appearance events. This led to the appearance of [KeyboardHelper](https://github.com/nodes-ios/KeyboardHelper).
 
@@ -47,26 +47,25 @@ This is a monthly meeting, where the management tells all the employees how the 
 # Tools We Use
 Our main communication tool is [**Slack**](https://nodes.slack.com). We use this for daily communication.
 
-Our main project management tool is [**Trello**](https://trello.com). Each project has its own Trello board. Always keep your project's Trello board up to date to reflect the current status of the project. We work in an agile manner and move fast, but the Trello board must clearly reflect the project's status. Ask [Simon](https://nodes.slack.com/messages/@siej) or your project manager if you have questions.
+Our main project management tool is [**JIRA**](https://nodesagency.atlassian.net/jira/). Each project has its own JIRA board. Always keep your project's JIRA board up to date to reflect the current status of the project. We work in an agile manner and move fast, but the JIRA board must clearly reflect the project's status. Ask [Simon](https://nodes.slack.com/messages/@siej) or your project manager if you have questions.
 
-[**Basecamp**](https://basecamp.com) is the main tool through which we interact with the clients. As a developer, normally you shouldn't have to deal that much with the clients directly or through Basecamp, but each project is unique and in some cases, developers are also added to Basecamp.
+With the same JIRA account you will also have access to 
 
-[**Harvest**](https://nodes.harvestapp.com/) is the time tracking tool that we use. It helps us see how much time one person has worked on a project. Make sure to always harvest on the appropriate project. Ask the PM on which Harvest project you should track the time. We expect you to harvest 7.5 hours per day (it's ok to do more, if you want). Lunch time is not harvested, and it doesn't count towards the 7.5 hours per day. And if you want more detailed instructions on how to harvest, ask [Simon](https://nodes.slack.com/messages/@siej).
+[**Harvest**](https://nodes.harvestapp.com/) is the time tracking tool that we use. It helps us see how much time one person has worked on a project. Make sure to always harvest on the appropriate project. Ask the PM on which Harvest project you should track the time. We expect you to harvest 7.5 hours per day. Lunch time is not harvested, and it doesn't count towards the 7.5 hours per day. And if you want more detailed instructions on how to harvest, ask [Simon](https://nodes.slack.com/messages/@siej). You can also set up auto-harvesting in you Ournodes acount and it will automatically harvest 7.5 hours per day on the project youre assigned to.
 
-Harvest goes well hand in hand with [**Forecast**](https://forecastapp.com/). Use Forecast to see what project you're assigned to that day. Forecast is our planning tool, you can see what other people are assigned to, how long a project should take, when other people are on vacation, etc. On a higher level, Harvest and Forecast are very well integrated and Project Managers can see when a project goes over budget (more hours were harvested than allocated in Forecast). But that's not something you as a developer should care about.
+Harvest goes well hand in hand with [**Forecast**](https://forecastapp.com/). Use Forecast to see what project you're assigned to that day. Forecast is our planning tool, you can see what other people are assigned to, how long a project should take, when other people are on vacation, etc. On a higher level, Harvest and Forecast are very well integrated and Project Managers can see if a project goes over budget (more hours were harvested than allocated in Forecast). But that's not something you as a developer should care about.
 
-[**Postman**](https://www.getpostman.com/) is a great tool which helps you see and test web APIs. Our backend team uses Postman to test and document their APIs, so all the web APIs for our apps can be found in Postman. You can use it to see the different endpoints available, read their documentation or make requests to those endpoints. If you don't already have access, ask Casper or Jonas for an invite to Postman.
+[**Postman**](https://www.getpostman.com/) is a great tool which helps you see and test web APIs. Our backend team uses Postman to test and document their APIs, so all the web APIs for our apps can be found in Postman. You can use it to see the different endpoints available, read their documentation or make requests to those endpoints. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
 
 Our design team uses Sketch. But you, as a developer, don't need to have Sketch installed. To ease the collaboration between designers and developers, we use [**Zeplin**](https://zeplin.io/). In Zeplin, you can see each screen in the design, get info about the sizes, padding, fonts, colours and also export assets for the mobile devices. You can also add notes in Zeplin and communicate with your designer directly on the project.
 
-[**Charles**](https://www.charlesproxy.com/) is an HTTP proxy. You can set your phone / simulator to proxy through Charles and you can see all the API calls it made, you can inspect its requests or responses. It comes in very handy especially if you work with an external, poorly documented API. 
+[**Charles**](https://www.charlesproxy.com/) is an HTTP proxy. You can set your phone / simulator to proxy through Charles and you can see all the API calls it made, you can inspect its requests or responses. It comes in very handy especially if you work with an external, poorly documented API. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you need a license.
 
-For in-house distribution and crash reporting, we use [**Hockey**](https://www.hockeyapp.net/). You need to be invited to our company's account. Ask any other iOS developer for an invite. We're currently considering replacing Hockey with another similar service; we will update this document when/if we do it.
+For in-house distribution and crash reporting, we use [**Firebase**](firebase.google.com/). Depensing on the project, sometimes we only use TestFlight. Talk to your PM or with previous developers on that project.
 
-We use [**Carthage**](https://github.com/Carthage/Carthage) to manage our dependencies on iOS. We chose Carthage over CocoaPods because for us, this is the one that brought the most advantages. We appreciate all the effort put into Carthage, as well as into CocoaPods, and we're looking forward to Swift Package Manager becoming the default dependency manager for iOS projects.
+We had been using [**Carthage**](https://github.com/Carthage/Carthage) for a long time to manage our dependencies on iOS. We chose Carthage over CocoaPods because for us, this is the one that brought the most advantages. But since we started using Firebase more and more and Google pushes strongly for CocoaPods, we sometimes use both in the same project. We appreciate all the effort put into Carthage, as well as into CocoaPods, and we're looking for the right time to switch to Swift Package Manager as our default dependency manager for iOS projects.
 
-The way we do localisation in Nodes is a bit different than in other places. We use [**NStack**](https://nstack.io/), a service we built, which together with the [**NStack SDK**](https://github.com/nodes-ios/NStack) offers dynamic localisation for our apps. Go to [nstack.io](https://nstack.io/), log in with your Nodes account, select the app you need (or create a new one), go to "Translate" and add new translations or edit the current ones. A translation consists of a key (by which the string is recognised through the SDK) and one or more values (depending on the number of languages your app is translated to). The translations can be changed in NStack and the changes will reflect in the app without the need of an app update.
-
+The way we do localisation in Nodes is a bit different than in other places. We use [**NStack**](https://nstack.io/), a service we built, which together with the [**NStack SDK**](https://github.com/nstack-io/nstack-ios-sdk) offers dynamic localisation for our apps. Go to [nstack.io](https://nstack.io/), log in with your Nodes account, select the app you need (or create a new one), go to "Translate" and add new translations or edit the current ones. A translation consists of a key (by which the string is recognised through the SDK) and one or more values (depending on the number of languages your app is translated to). The translations can be changed in NStack and the changes will reflect in the app without the need of an app update.
 
 
 # Coding Guidelines
@@ -98,7 +97,8 @@ We also listed the most common issues when Bitrise is trying to make the builds.
 A guide that shows how to migrate between different versions of Swift in our projects can be [found here](https://github.com/nodes-ios/Playbook/blob/master/migration-guide.md).
 
 # Working with Remote Colleagues
-Having one office in London, one in Copenhagen and one in Aarhus means you get to work with colleagues who are not in the same office as you are. If that is the case, make sure to rely as much as possible on Trello. 
+
+Having offices in 7 locations in Europe and Middle East means you get to work with colleagues who are not in the same office as you are. If that is the case, make sure to rely as much as possible on JIRA. 
 
 Our main means of communication inside the company is Slack. Use it wisely.
 
@@ -106,8 +106,8 @@ It helps a lot to try and change your mindset from synchronous communication to 
 
 Always have a good overview of what's left to be done and what you need in order to get it done. 
 
-If you need something (an image asset, some input from the PM, etc), make a Trello card asking for that. 
+If you need something (an image asset, some input from the PM, etc), make a JIRA card asking for that. 
 
-If there's some feedback from the client but you're not sure what to do about it, because there are multiple options, comment on the Trello card presenting what options there are, estimating how much time each of it would take and maybe advising towards one of it and ask the PM to take the decision.
+If there's some feedback from the client but you're not sure what to do about it, because there are multiple options, comment on the JIRA issue presenting what options there are, estimating how much time each of it would take and maybe advising towards one of it and ask the PM to take the decision.
 
 If in doubt, ask for a video call to discuss things. However, try to write down the notes / conclusions of the meeting, so you have them in writing. This helps you not forget anything and it also helps to align everyone on the team to the same conclusion.
