@@ -36,6 +36,7 @@ This is a monthly meeting, where the management tells all the employees how the 
 
 The IT department is responsible for setting up accounts and giving you access to the tools you need to do your job. The easiest way to contact the IT departmentis by using the `/halp` command on Slack.
 
+- Meet with the Head of iOS, your Team Manager (Lead Developer) and your Nodes Buddy. They will be your first persons of reference in the company. Use them as much as you need to get settled in, but also be considerate of their own time.
 - Join [our private git](https://github.com/nodes-projects). Ask IT if you don't have access.
 - Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
@@ -47,6 +48,9 @@ The IT department is responsible for setting up accounts and giving you access t
 - We use [Happeo](https://app.happeo.com/home) for internal (semi)official announcements. Ask IT if you don't have access.
 
 # Tools We Use
+
+For employee management we use [BambooHR](https://nodesagency.bamboohr.com/home). Ask IT if ou don't have access and the Chief People Officer if anything in there is unclear. Use this to request time off, register sick day and manage your personal info and banking info for salary pay.
+
 Our main communication tool is [**Slack**](https://nodes.slack.com). We use this for daily communication.
 
 Our main project management tool is [**JIRA**](https://nodesagency.atlassian.net/jira/). Each project has its own JIRA board. Always keep your project's JIRA board up to date to reflect the current status of the project. We work in an agile manner and move fast, but the JIRA board must clearly reflect the project's status. Ask [Simon](https://nodes.slack.com/messages/@siej) or your project manager if you have questions.
