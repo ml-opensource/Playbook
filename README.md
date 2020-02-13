@@ -49,7 +49,7 @@ The IT department is responsible for setting up accounts and giving you access t
 
 # Tools We Use
 
-For employee management we use [BambooHR](https://nodesagency.bamboohr.com/home). Ask IT if ou don't have access and the Chief People Officer if anything in there is unclear. Use this to request time off, register sick day and manage your personal info and banking info for salary pay.
+For employee management we use [BambooHR](https://nodesagency.bamboohr.com/home). Ask IT if you don't have access and the Chief People Officer if anything in there is unclear. Use this to request time off, register sick day and manage your personal info and banking info for salary pay.
 
 Our main communication tool is [**Slack**](https://nodes.slack.com). We use this for daily communication.
 
