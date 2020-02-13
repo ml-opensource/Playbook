@@ -17,8 +17,6 @@ We try to increase our contribution to the iOS developer community through:
 
 We create lots of apps for our clients. Most of those apps rely heavily on web APIs. We abstracted the common operations for working with web APIs, and that's how [Serpent](https://github.com/nodes-ios/Serpent) (formerly known as Serializable) and [Cashier](https://github.com/nodes-ios/Cashier) were born. Another issue that was common in all the apps we do was handling keyboard appearance events. This led to the appearance of [KeyboardHelper](https://github.com/nodes-ios/KeyboardHelper).
 
-We are currently in the process of abstracting parts of our codebase into open source libraries that can be reused in other projects. As well as this, we are trying to change our way of thinking for current and future projects and when we encounter a feature whose implementation can be reused in other projects we try to implement it as a separate component which we open source. We are just beginning, and it is a big change, but this is what we aim for in the long run.
-
 
 # Team meetings
 Here are the recurring meetings the iOS team takes part in:
@@ -26,29 +24,25 @@ Here are the recurring meetings the iOS team takes part in:
 #### iOS Team Meeting
 This is the main meeting in the iOS team, where we talk about the latest things happening in our team. General direction of the team, brief general team performance review, what people need help with, amount of workload, should we use or not _that_ framework, etc. This happens in the first Monday of each month. 
 
-#### Mobile Show and Tell Meeting
-This is a monthly meeting, that occurs on the third Friday of every month. Members of the iOS and Android team talk about anything cool that they implemented recently. It could be using some new technology, some cool framework, a nice animation, a clever algorithm or anything similar to this. Traditionally, there's beer for presenters and attendees. 
+#### Friday Tech Talk
+This is a monthly meeting, that occurs on the fourth Friday of every month. Anyone in the engineering team can talk about anything cool that they implemented recently. It could be using some new technology, some cool framework, a nice animation, a clever algorithm or anything similar to this. The meeting is held in the Copenhagen office, but if anyone from other offices wants to attend, we can enable a video call.
 
-#### Quarterly Company Catch-up
+#### Monthly Briefing
 
-This is a quarterly meeting, where the board tells all the employees how the company did in the last quarter and what our targets and short, mid and long-term plans are. You'll find out if the sales and production are on track, below or ahead of target, and anything else relevant to the company. It's not only a presentation, feel free to ask questions. 
-
-
+This is a monthly meeting, where the management tells all the employees how the company did in the last month and what our targets and short, mid and long-term plans are. Topics covered are sales, projects, cases, tech, events, staff and others.
 
 
 # Your First Day
+- Meet with the [Head of iOS](https://nodes.slack.com/messages/@chco), your [manager](https://nodes.slack.com/messages/@mofa) and your Nodes Buddy.
 - Join [our private git](https://github.com/nodes-projects) and ask [Chris](https://nodes.slack.com/messages/@chco) to add you to the correct groups.
 - Get the cert sign request and private key from [this private repo here](https://github.com/nodes-projects/keyring-ios). Add the private key to your Keychain and from now on, always use this certificate signing request when creating new certificates on the developer portal. 
 - Install the latest Xcode. Ideally, from the [Apple developer portal](https://developer.apple.com/download/more/) and not from the App Store. If you got it from the App Store, that's ok too.
-- Get another iOS developer to invite you to our developer account.
+- Get another iOS developer to invite you to our developer accounts.
 - We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://github.com/nodes-projects) and our public ones are on [GitHub](https://github.com/nodes-ios).
 - Set up your git keys properly, so you can pull and push from both git servers.
-- Ask an iOS colleague to invite you to Hockey
-- You should have been invited to our Slack, Trello, and Postman accounts. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
-- Make sure to read the description of our [iOS stack on our engineering blog](https://engineering.nodesagency.com/our-stacks/ios/). That article goes hand in hand with this playbook here.
+- You should have been invited to our Slack, JIRA, and Postman accounts. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
 - Make sure to read the [Nodes Handbook](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit) (private document). That is meant for all employees, and tells a bit of our history, how we got here, but also how we handle different tasks.
-- We love eating cake, and we hope you do too. We'll use any excuse to do it. So we'll ask you to have [Simon](https://nodes.slack.com/messages/@siej) add your birthday to the calendar, so we can get you a big birthday cake and celebrate.
-- We have Facebook groups for internal semi-official announcements. Ask a colleague to add you to the groups. 
+- We use [Happeo](https://app.happeo.com/home) for internal (semi)official announcements. Talk to [Jacob](https://nodes.slack.com/messages/@jafr) if you're missing access.
 
 # Tools We Use
 Our main communication tool is [**Slack**](https://nodes.slack.com). We use this for daily communication.
