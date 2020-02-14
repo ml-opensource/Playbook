@@ -22,7 +22,7 @@ We create lots of apps for our clients. Most of those apps rely heavily on web A
 Here are the recurring meetings the iOS team takes part in:
 
 #### iOS Team Meeting
-This is the main meeting in the iOS team, where we talk about the latest things happening in our team. General direction of the team, brief general team performance review, what people need help with, amount of workload, should we use or not _that_ framework, etc. This happens in the first Monday of each month. 
+This is the main meeting in the iOS team, where we talk about the latest things happening in our team. General direction of the team, brief general team performance review, what people need help with, amount of workload, should we use or not _that_ framework, etc. This happens on the first Monday of each month. 
 
 #### Friday Tech Talk
 This is a monthly meeting, that occurs on the fourth Friday of every month. Anyone in the engineering team can talk about anything cool that they implemented recently. It could be using some new technology, some cool framework, a nice animation, a clever algorithm or anything similar to this. The meeting is held in the Copenhagen office, but if anyone from other offices wants to attend, we can enable a video call.
@@ -34,7 +34,7 @@ This is a monthly meeting, where the management tells all the employees how the 
 
 # Your First Day
 
-The IT department is responsible for setting up accounts and giving you access to the tools you need to do your job. The easiest way to contact the IT departmentis by using the `/halp` command on Slack.
+The IT department is responsible for setting up accounts and giving you access to the tools you need to do your job. The easiest way to contact the IT department is by using the `/halp` command on Slack.
 
 - Meet with the Head of iOS, your Team Manager (Lead Developer) and your Nodes Buddy. They will be your first persons of reference in the company. Use them as much as you need to get settled in, but also be considerate of their own time.
 - Join [our private git](https://github.com/nodes-projects). Ask IT if you don't have access.
@@ -49,7 +49,7 @@ The IT department is responsible for setting up accounts and giving you access t
 
 # Tools We Use
 
-For employee management we use [BambooHR](https://nodesagency.bamboohr.com/home). Ask IT if you don't have access and the Chief People Officer if anything in there is unclear. Use this to request time off, register sick day and manage your personal info and banking info for salary pay.
+For employee management, we use [BambooHR](https://nodesagency.bamboohr.com/home). Ask IT if you don't have access and the Chief People Officer if anything in there is unclear. Use this to request time off, register sick day and manage your personal info and banking info for salary payments.
 
 Our main communication tool is [**Slack**](https://nodes.slack.com). We use this for daily communication.
 
@@ -57,7 +57,7 @@ Our main project management tool is [**JIRA**](https://nodesagency.atlassian.net
 
 With the same JIRA account, you will also have access to Confluence, where you can find project-related documentation, and also internal documents.
 
-[**Harvest**](https://nodes.harvestapp.com/) is the time tracking tool that we use. It helps us see how much time one person has worked on a project. Make sure to always harvest on the appropriate project. Ask the PM on which Harvest project you should track the time. We expect you to harvest 7.5 hours per day (8 in Germany). Lunch time is not harvested, and it doesn't count towards the daily workhours. If you want more detailed instructions on how to harvest, check out the [company handbook (private document)](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit#heading=h.s0buhmnr48yl). You can also set up auto-harvesting in you Ournodes acount and it will automatically harvest your day on the project you're assigned to.
+[**Harvest**](https://nodes.harvestapp.com/) is the time tracking tool that we use. It helps us see how much time one person has worked on a project. Make sure to always harvest on the appropriate project. Ask the PM on which Harvest project you should track the time. We expect you to harvest 7.5 hours per day (8 in Germany). Lunchtime is not harvested, and it doesn't count towards the daily work hours. If you want more detailed instructions on how to harvest, check out the [company handbook (private document)](https://docs.google.com/document/d/1E4ZyGqIKDttGlJ0c0rEkNy2lxP-n1PBwQzuaESbLnpw/edit#heading=h.s0buhmnr48yl). You can also set up auto-harvesting in you Ournodes account and it will automatically harvest your day on the project you're assigned to.
 
 Harvest goes well hand in hand with [**Forecast**](https://forecastapp.com/). Use Forecast to see what project you're assigned to that day. Forecast is our planning tool, you can see what other people are assigned to, how long a project should take, when other people are on vacation, etc. On a higher level, Harvest and Forecast are very well integrated and Project Managers can see if a project goes over budget (more hours were harvested than allocated in Forecast). But that's not something you as a developer should care about.
 
@@ -80,19 +80,19 @@ Make sure to read our [**Swift Style Guide**](styleguide.md).
 
 # Continuous Integration (CI)
 
-As a digital agency we build hundreds of apps during the day and to manage all these builds we are using Bitrise as a CI tool to speed up our deployment process and [Match](https://docs.fastlane.tools/actions/match/) + Github to manage our client's certificates.
+As a digital agency, we build hundreds of apps during the day and to manage all these builds we are using Bitrise as a CI tool to speed up our deployment process and [Match](https://docs.fastlane.tools/actions/match/) + Github to manage our client's certificates.
 
 Please find below the steps to configure your project.
 
 ***1) Creating a new project on Bitrise***
 
-Once you get access to Bitrise the creation process is straightforward and most of it is automatic if you have attached your github account to your Bitrise account. 
+Once you get access to Bitrise the creation process is straightforward and most of it is automatic if you have attached your GitHub account to your Bitrise account. 
 
-[Here](./ci/bitrise-setup-readme.md) you will find a configuration guide to help you setting up your project on Bitrise.
+[Here](./ci/bitrise-setup-readme.md) you will find a configuration guide to help you set up your project on Bitrise.
 
 ***2) Integrating into your Xcode project***
 
-If you already have a project created an you just need to deploy it to Bitrise you'll need to add the configuration file `project.yml` to the root of your project. In case you need to add or change any configuration but are unsure how to do that please refer to this [document](./ci/bitrise-config-readme.md).
+If you already have a project created and you just need to deploy it to Bitrise you'll need to add the configuration file `project.yml` to the root of your project. In case you need to add or change any configuration but are unsure how to do that please refer to this [document](./ci/bitrise-config-readme.md).
 
 ***3) Troubleshooting***
 
@@ -101,11 +101,11 @@ We also listed the most common issues when Bitrise is trying to make the builds.
 
 # Working with Remote Colleagues
 
-Having offices in 7 locations in Europe and Middle East means you get to work with colleagues who are not in the same office as you are. If that is the case, make sure to rely as much as possible on JIRA. 
+Having offices in 7 locations in Europe and the Middle East means you get to work with colleagues who are not in the same office as you are. If that is the case, make sure to rely as much as possible on JIRA. 
 
 Our main means of communication inside the company is Slack. Use it wisely.
 
-It helps a lot to try and change your mindset from synchronous communication to asynchronous communication. This means that you try to foresee any problems you might run into and ask about info for them before you actually run into them. Try not to get into a situation where you need an answer from someone in order to be able to continue.
+It helps a lot to try and change your mindset from synchronous communication to asynchronous communication. This means that you try to foresee any problems you might run into and ask about info for them before you actually run into them. Try not to get into a situation where you need an answer from someone to be able to continue.
 
 Always have a good overview of what's left to be done and what you need in order to get it done. 
 
