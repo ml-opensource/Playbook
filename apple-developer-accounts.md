@@ -1,38 +1,10 @@
 # Apple Developer Accounts 
 # 🌟
 
+* Create an Apple ID on your Nodes email
+* Have Service Desk add you to the project you need by making an Access Request (Internal) request here https://nodes-internal.zendesk.com/
+* Remember to ask for access to create certificates and provisioning profiles (there's an extra checkbox they have to check if they add you as Developer)
+* Service Desk will monitor certificate expiry (mostly for push notifications)
+* QA / Service Desk are responsible for releases. They will create screenshots, what's new in version, etc and take care of the AppStore Connect page
+* CI should be setup to upload production builds to Test Flight. You shouldn't have to build and upload manually. If someone asks you to do that, ask for more time to setup CI correctly.
 
-## Roles
-
-### Admins: 
-* AMT + iOS Platform Lead 
-
-### Members:
-* Developers actively working on the project
-
-## Process:
-
-### AMT
-AMT will add developers as members to the project team when they join the project, and remove them when they are no longer allocated to the project. They will also be in charge of monitoring expiring certitficates and profiles, and maintaining the device list. 
-
-### iOS Platform Lead
-The lead is in charge of the activities that require admin rights. This includes generating production certificates and profiles, approving signing requests. When a project is started, the lead will create the distribution certificate and profile and commit them to the project git repository. 
-
-
-# iTunes Connect Accounts
-
-## Roles
-
-### Admins:
-* AMT 
-
-### Developers:
-* CI
-
-## Process:
-
-### AMT
-AMT will manage app information and releases on behalf of Nodes, including project descriptions, Test Flight builds, and app submission. Project managers will take a less techincal role and therefore not need access to iTunes Connect. 
-
-### CI
-The Continuous Integration system will handle all uploads to Test Flight. Individual developers will use the CI system to upload builds, and therefore will not need access to iTunes Connect. 
