@@ -19,7 +19,10 @@ To create the API key, go to:
 - Keys
 - App Store Connect API
 
-and create a new API key with Admin privileges. Download and save the key (it is a .p8 file and can be downloaded only once). You will also need the issuer ID from this page. When you have downloaded the key, please send it to Martin Majer at Service Desk so that it can be securely stored.
+and create a new API key with Admin privileges. Download and save the key (it is a .p8 file and can be downloaded only once). 
+❗️DO NOT CHANGE THE FILE NAME, OTHERWISE IT WILL BREAK THE STEP IN THE CI ❗️. The file format should be AuthKey_XXXXXXXX.p8. 
+
+You will also need the issuer ID from this page. When you have downloaded the key, please send it to Martin Majer at Service Desk so that it can be securely stored.
 
 <p align="center">
   <img src="../images/ci/08-api-key.png?raw=true" alt="App Store Connect API key"/>
