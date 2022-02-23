@@ -26,7 +26,7 @@ Make sure your project's schemes are ***shared (including app extensions)***.
 Enable ***Automatically manage signing*** for all the configurations you want to build in the CI. If you do not do this, you will get failures in the Archive step. 
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/1_1.png?raw=true"/>
+  <img src="../images/ci-cloudSigning/1_1.png?raw=true"/>
 </p> 
 
 
@@ -36,20 +36,20 @@ Enable ***Automatically manage signing*** for all the configurations you want to
 - Make sure you choose **Monstarlab** account when creating the new app and make it **Private**
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/2_1.png"/>
+  <img src="../images/ci-cloudSigning/2_1.png"/>
 </p> 
 
 2) Connect the repository to Bitrise
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/2_2.png"/>
+  <img src="../images/ci-cloudSigning/2_2.png"/>
 </p> 
 
 
 3) When setting up the access make sure to add our SSH key using the private key found in the [ci-resources-ios](https://github.com/nodes-projects/ci-resources-ios/blob/master/privatekey) repository.
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/2_3.png"/>
+  <img src="../images/ci-cloudSigning/2_3.png"/>
 </p> 
 
 
@@ -58,20 +58,20 @@ Enable ***Automatically manage signing*** for all the configurations you want to
 5) After choosing the branch, Bitrise will validate the source code and then you can select the *export method* you want to use. Go with ***app store***. Bitrise should also autodetect your project file and scheme.
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/2_4.png"/>
+  <img src="../images/ci-cloudSigning/2_4.png"/>
 </p> 
 
 6) The last step is the Webhook setup. This is used to trigger the builds by tags. Tap on **Register a webhook for me**. If the automatic registration does not work, you can [setup the webhook manually](https://devcenter.bitrise.io/en/apps/webhooks/adding-incoming-webhooks.html#adding-incoming-webhooks) now or later. You need to have the admin rights for the Github repository of your app for this though. 
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/2_5.png"/>
+  <img src="../images/ci-cloudSigning/2_5.png"/>
 </p> 
 
 ## Environment vars setup
 In order to make everything work on Bitrise you'll need to copy the template content from [bitrise.yml](https://github.com/nodes-projects/ci-resources-ios/blob/master/bitrise_cloud_signing.yml) into the Bitrise workflow script.
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/3_1.png"/>
+  <img src="../images/ci-cloudSigning/3_1.png"/>
 </p> 
 
 Go to **Workflow > Env** Vars tab. 
@@ -83,7 +83,7 @@ You should see all your environment variables here.
 Leave the BUILD_CONFIGURATION empty. This is assigned in the preparation steps during building.
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/3_2.png"/>
+  <img src="../images/ci-cloudSigning/3_2.png"/>
 </p> 
 
 ## Secrets setup
@@ -92,11 +92,11 @@ Go to the **Workflow > Secrets** tab. Add these secrets:
 - SLACK_TOKEN - Used to send notifications after successful builds. The token is universal for the Monstarlab Slack Workspace (I think). Can be found [here](https://github.com/nodes-projects/ci-resources-ios/blob/master/slackToken) or copied from another app on Bitrise. 
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/4_1.png"/>
+  <img src="../images/ci-cloudSigning/4_1.png"/>
 </p> 
 
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/4_2.png"/>
+  <img src="../images/ci-cloudSigning/4_2.png"/>
 </p> 
 
 ## Code signing
@@ -104,14 +104,14 @@ You only need to upload the development signing certificate to Bitrise. This is 
 
 1) Download the certificate from the Apple Developer portal.
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/5_1.png"/>
+  <img src="../images/ci-cloudSigning/5_1.png"/>
 </p>
 
 2) The certificate is in a .cer format. You will need the private key .p12 file though that is embedded inside the .cer file.
 3) Double click the certificate and install it into your Keychain.
 4) Find the cert in your Keychain. Expand it and right tap on the private key. Select ***Export <Certificate name>***. If you do not see the private key, you downloaded a certificate without it. You can either find the person who created the certificate and get the original certificate from them or you can create a new certificate. The full certificate with the private key can be downloaded from the Apple Developer portal only once.
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/5_2.png"/>
+  <img src="../images/ci-cloudSigning/5_2.png"/>
 </p>
 
 5) Create a password for the exported key. You will need to fill it later into Bitrise.
@@ -119,7 +119,7 @@ You only need to upload the development signing certificate to Bitrise. This is 
 
   
 <p align="center">
-  <img src="https://github.com/nodes-ios/Playbook/blob/master/images/ci-cloudSigning/5_3.png"/>
+  <img src="../images/ci-cloudSigning/5_3.png"/>
 </p> 
 
 ## App Store Connect API Authentication
