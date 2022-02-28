@@ -1,11 +1,26 @@
-# Monstarlab iOS Bitrise - Setup Guide with Cloud Code Signing 🛠
+# Monstarlab iOS Bitrise - Setup Guide with Cloud Code Signing ☁️
 
-This is a simple Bitrise app setup guide that makes use of Apple Cloud Code Signing. What this means is that the code signing is managed automatically by Apple. The code signing files are fetched from the Apple servers after the archiving process. You only need to upload the development signing certificate (its .p12 private key file) to the Bitrise app which is needed to create the initial archive.
-You also need to make sure that you have the apps, their bundle ids, the production certificate and provisioning profiles (including the entitlements) configured correctly in the App Store Connect. The connection and authentication with Apple is managed using an App Store Connect API key. 
+This is a simple Bitrise app setup guide that makes use of Apple cloud signing. This allows us to simplify the setup tremendously. 
+
+## How does cloud signing work? 
+Cloud signing means the code signing files are managed on Apple servers. You do not need to set them up locally or use Fastlane Match. The code signing files are fetched from Apple servers and you just need an Apple dev account with sufficient access rights (Admin or Developer with access to certificates).
+
+Cloud code signing makes use of the `xcodebuild` command which is also used internally in the Bitrise archiving step. You need these 3 things to create a code signed .ipa file using this command:
+- xarchive of your app - initial archive. Before the proper code signing files are fetched from Apple, this archive is created and signed using a development certificate. Later it is resigned using the proper code signing files. 
+- exportOptions.plist - just a plist specifying the configuration options like team id or distribution method. Handled by the Bitrise step.
+- App Store Connect API key - to authenticate with Apple and download code signing files. You need to create this and upload it to your profile in Bitrise.
+
+<p align="center">
+  <img src="../images/ci-cloudSigning/0_1.png"/>
+</p> 
+
+Once all of these are passed to the command, the right code signing files are fetched from the Apple servers and used to code sign the app. The resulting .ipa file is then uploaded to App Store Connect in the upload Bitrise step.
+
+More on cloud signing [here](https://developer.apple.com/videos/play/wwdc2021/10204/).
 
 ## Features of this setup: 
  - Easy setup in the Bitrise GUI
- - Builds two XCode configurations: Release and Test
+ - Builds two Xcode configurations: Release and Test
  - Uses App Store Connect API key to code sign and send builds to Testflight
  - Deploys builds to Testflight only
  - Builds triggered by commit tags - `*`, `*_release` and `*_test`
@@ -13,12 +28,21 @@ You also need to make sure that you have the apps, their bundle ids, the product
  - Works with CocoaPods and SPM. Carthage is dead ☠️
 
 ## Steps: 
-- [1. Xcode setup](#Xcode-setup)
-- [2. App setup on Bitrise](#App-setup-on-Bitrise)
-- [3. Environment vars setup](#Environment-vars-setup)
-- [4. Secrets setup](#Secrets-setup)
-- [5. Code signing](#Code-signing)
-- [6. App Store Connect Authentication](#App-Store-Connect-Authentication)
+- [1. App Store setup](#App-Store-setup)
+- [2. Xcode setup](#Xcode-setup)
+- [3. App setup on Bitrise](#App-setup-on-Bitrise)
+- [4. Environment vars setup](#Environment-vars-setup)
+- [5. Secrets setup](#Secrets-setup)
+- [6. Code signing](#Code-signing)
+- [7. App Store Connect Authentication](#App-Store-Connect-Authentication)
+
+## App Store setup
+Make sure you have all of these set up in App Store:
+- 2 apps for both for the release and test environments
+- Production certificate and provisioning profiles for all the apps (including the entitlements)
+
+❗️Important❗️
+If you migrate from using Fastlane Match, it is probably wise to nuke all the certificates and provisioning profiles and remake them from scratch. Using the old ones can result in getting a *This App Cannot be installed because its integrity could not be verified* error when trying to install the app from TestFlight.
 
 ## Xcode setup
 
@@ -100,7 +124,7 @@ Go to the **Workflow > Secrets** tab. Add these secrets:
 </p> 
 
 ## Code signing
-You only need to upload the development signing certificate to Bitrise. This is used to create the initial xarchive. All the other signing files are downloaded from Apple servers during the build process. 
+You only need to upload the development signing certificate to Bitrise. This is used to code sign an initial archive before the code signing files are downloaded from Apple and the app is resigned with them. Even this development certificate could be omitted theoretically because the cloud code signing can create a new one if it does not find it locally. This, however, creates multiple new development certificates with every new build so it is better to upload it to Bitrise.
 
 1) Download the certificate from the Apple Developer portal.
 <p align="center">
@@ -123,7 +147,9 @@ You only need to upload the development signing certificate to Bitrise. This is 
 </p> 
 
 ## App Store Connect API Authentication
-ASC API key is used to authenticate with the ASC to fetch code signing files and send the builds to the App Store.
+ASC API key is used to authenticate with the ASC to fetch code signing files and send the builds to the App Store. The ASC key configuration is slightly different than the one we used in past. 
+
+In short, you need to create the key in ASC and then upload it to your profile in Bitrise. Once you have it uploaded to your profile, you need to select this connection in your Bitrise app. This is considered your private connection, there is no way to set this up for an entire organization afaik. Once this connection si set in the app, the builds triggered by other members of the team can use it too though.
 
 #### 1. Create the App Store Connect API Key
 
@@ -149,7 +175,7 @@ Next you need to upload the obtained .p8 key file to the Monstarlab organization
 You can find a guide to set the API key connection for the app [here](https://devcenter.bitrise.io/en/accounts/connecting-to-services/connecting-to-an-apple-service-with-api-key.html#adding-api-key-authentication-data-on-bitrise). 
 
 # Tadaaa, you are all done 🎉
-Before making a build, also make sure you use the right version of XCode in the **Stack** tab.
+Before making a build, also make sure you use the right version of Xcode in the **Stack** tab.
   
 Now tag a commit and push the tag to your repo. This should trigger a build.
   
