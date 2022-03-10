@@ -131,7 +131,7 @@ You only need to upload the development signing certificate to Bitrise. This is 
   <img src="../images/ci-cloudSigning/5_1.png"/>
 </p>
 
-2) The certificate is in a .cer format. You will need the private key .p12 file though that is embedded inside the .cer file.
+2) The certificate is in a .cer format. You will need the private key .p12 file though that is associated with the .cer file.
 3) Double click the certificate and install it into your Keychain.
 4) Find the cert in your Keychain. Expand it and right tap on the private key. Select ***Export <Certificate name>***. If you do not see the private key, you downloaded a certificate without it. You can either find the person who created the certificate and get the original certificate from them or you can create a new certificate. The full certificate with the private key can be downloaded from the Apple Developer portal only once.
 <p align="center">
