@@ -3,7 +3,7 @@
 This is a simple Bitrise app setup guide that makes use of Apple cloud signing. This allows us to simplify the setup tremendously. 
 
 ## How does cloud signing work? 
-Cloud signing means the code signing files are managed on Apple servers. You do not need to set them up locally or use Fastlane Match. The code signing files are fetched from Apple servers and you just need an Apple dev account with sufficient access rights (Admin or Developer with access to certificates).
+Cloud signing means the code signing files are managed on Apple servers. You do not need to set them up locally or use Fastlane Match. The code signing files are fetched from Apple servers and you just need an Apple dev account with sufficient access rights (Admin or Developer with access to certificates - including cloud certificates).
 
 Cloud code signing makes use of the `xcodebuild` command which is also used internally in the Bitrise archiving step. You need these 3 things to create a code signed .ipa file using this command:
 - xarchive of your app - initial archive. Before the proper code signing files are fetched from Apple, this archive is created and signed using a development certificate. Later it is resigned using the proper code signing files. 
