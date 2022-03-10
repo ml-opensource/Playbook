@@ -126,14 +126,9 @@ Go to the **Workflow > Secrets** tab. Add these secrets:
 ## Code signing
 You only need to upload the development signing certificate to Bitrise. This is used to code sign an initial archive before the code signing files are downloaded from Apple and the app is resigned with them. Even this development certificate could be omitted theoretically because the cloud code signing can create a new one if it does not find it locally. This, however, creates multiple new development certificates with every new build so it is better to upload it to Bitrise.
 
-1) Download the certificate from the Apple Developer portal.
-<p align="center">
-  <img src="../images/ci-cloudSigning/5_1.png"/>
-</p>
+1) Create a development certificate. You can do this either using Fastlane Match or manually on the Apple developer portal. 
 
-2) The certificate is in a .cer format. You will need the private key .p12 file though that is associated with the .cer file.
-3) Double click the certificate and install it into your Keychain.
-4) Find the cert in your Keychain. Expand it and right tap on the private key. Select ***Export <Certificate name>***. If you do not see the private key, you downloaded a certificate without it. You can either find the person who created the certificate and get the original certificate from them or you can create a new certificate. The full certificate with the private key can be downloaded from the Apple Developer portal only once.
+2) Find the cert in your Keychain. Expand it and right tap on the private key. Select ***Export <Certificate name>***. If you do not see the private key, you downloaded a certificate without it. You can either find the person who created the certificate and get the private key from them or you can create a new certificate. 
 <p align="center">
   <img src="../images/ci-cloudSigning/5_2.png"/>
 </p>
