@@ -76,7 +76,7 @@ The way we do localization in Nodes is a bit different than in other places. We 
 
 # Coding Guidelines
 Make sure to read our [**Swift Style Guide**](styleguide.md).  
-
+We use [**Conventional commits**](https://www.conventionalcommits.org/en/v1.0.0) in our commit messages. Mostly `fix:` and `feat:` but feel free to use others as well. These are used to extract change logs.
 
 # Continuous Integration (CI)
 
