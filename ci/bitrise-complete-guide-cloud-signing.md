@@ -112,7 +112,7 @@ Leave the BUILD_CONFIGURATION empty. This is assigned in the preparation steps d
 
 ## Secrets setup
 Go to the **Workflow > Secrets** tab. Add these secrets:
-- BUILD_TRIGGER_API_TOKEN - Can be found in the **Code** tab of your app on Bitrise. This is needed to trigger the build workflows.
+- BUILD_TRIGGER_API_TOKEN - Can be found in the **Integrations** section of **App Setting** on Bitrise. Look for the Token under Build trigger API. This is needed to trigger the build workflows.
 - SLACK_TOKEN - Used to send notifications after successful builds. The token is universal for the Monstarlab Slack Workspace (I think). Can be found [here](https://github.com/nodes-projects/ci-resources-ios/blob/master/slackToken) or copied from another app on Bitrise. 
 
 <p align="center">
