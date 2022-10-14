@@ -128,7 +128,7 @@ You only need to upload the development signing certificate to Bitrise. This is 
 
 1) Create a development certificate. You can do this either using Fastlane Match or manually on the Apple developer portal. 
 
-2) Find the cert in your Keychain. Expand it and right tap on the private key. Select ***Export <Certificate name>***. If you do not see the private key, you downloaded a certificate without it. You can either find the person who created the certificate and get the private key from them or you can create a new certificate. 
+2) Find the cert in your Keychain. Make sure to open it from the "My certificates" tab, not the "All items" tab. You might get an "Error getting details of uploaded file" while uploading the file to Bitrise later otherwise. Expand it and right tap on the private key. Select ***Export <Certificate name>***. If you do not see the private key, you downloaded a certificate without it. You can either find the person who created the certificate and get the private key from them or you can create a new certificate. 
 <p align="center">
   <img src="../images/ci-cloudSigning/5_2.png"/>
 </p>
