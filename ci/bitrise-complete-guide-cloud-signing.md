@@ -161,7 +161,7 @@ To create the API key, go to:
 and create a new API key with Admin privileges. Download and save the key (it is a .p8 file and can be downloaded only once). 
 ❗️DO NOT CHANGE THE FILE NAME, OTHERWISE IT WILL BREAK THE STEP IN THE CI ❗️. The file format should be AuthKey_XXXXXXXX.p8. 
 
-You will also need the issuer ID and the key ID from this page. When you have downloaded the key, please send it to Martin Majer at Service Desk so that it can be securely stored.
+You will also need the issuer ID and the key ID from this page. When you have downloaded the key, please send it the IT team and tell them to put it in the API key 1password vault - as a Secure note, together with the issuer and key ID.
 
 
 #### 2. Upload the App Store Connect API key to Bitrise
