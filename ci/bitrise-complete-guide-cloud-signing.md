@@ -103,7 +103,7 @@ You should see all your environment variables here.
 - SLACK_CHANNEL - name of the Slack channel to send a message when the build succeeds
 - RELEASE_BUILD_CONFIGURATION and TEST_BUILD_CONFIGURATION - change only if you have different names in your project.
 - BITRISE_PROJECT_PATH and BITRISE_SCHEME - change them from placeholders to your project's values. 
-
+- RUN_TESTS_BEFORE_BUILDING - change to true if you want to run tests in your build workflows. This increases the build time significantly. 
 Leave the BUILD_CONFIGURATION empty. This is assigned in the preparation steps during building.
 
 <p align="center">
