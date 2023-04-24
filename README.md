@@ -79,6 +79,8 @@ As a digital agency, we build hundreds of apps during the day and to manage all 
 
 Please refer to our CI setup guide [here](https://github.com/nodes-ios/Playbook/blob/master/ci/bitrise-complete-guide-cloud-signing.md#app-store-setup).
 
+We use SonarQube to monitor code quality. We should run Bitrise on PullRequests, that runs and asserts all tests pass and reports code coverage to SonarQube. For more information on how to setup SonarQube with your Bitrise project, see [here](https://monstarlab.atlassian.net/wiki/spaces/CTO/pages/7591755784/SonarQube+Setup).
+
 ***Troubleshooting***
 We also listed the most common issues when Bitrise is trying to make the builds. Please check the [common issues document](./ci/bitrise-issues-readme.md) if you are having some problems.
 
