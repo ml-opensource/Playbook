@@ -10,8 +10,6 @@ These guidelines will, of course, not cover every aspect of writing Swift code. 
 
 Always adhere to the Swift official [API design guidelines](https://swift.org/documentation/api-design-guidelines/).
 
-Check out [this readme](https://github.com/nodes-ios/VIPERCoordinatorsXcodeFileTemplate/blob/master/README.md) and [this talk by @doha](https://slideslive.com/38908270/architecting-your-app-with-viper-effectively) for an explanation of how we use VIPER architecture at Nodes.
-
 The template should provide most of the style reference you should follow when adopting this architecture. 
 
 
@@ -22,11 +20,11 @@ The template should provide most of the style reference you should follow when a
 The following guidelines (most of which will be repeated further down in this document) should give you some tips that will make it easier for you to navigate through the project.
 
 
-* The models will have descriptive, simple names: `User`, `Post`, `NewsItem`, `Bird`, etc. When working with a Nodes backend made in Vapor, it's helpful to ask them for their model, as it will closely resemble ours. 
+* The models will have descriptive, simple names: `User`, `Post`, `NewsItem`, `Bird`, etc.
 * Usually, anything that is not a model should have some suffix indicating what it is: `RoundedButton`, `CacheManager`, `DeepLinkManager`. There are a few exceptions. Follow the Swift API design guidelines with regards to this rule. 
 * All the custom views should end in `View`: `NewsItemView`, `PensionItemView`, etc. This clearly separates them from the model but also indicates what that view does.
 * Similarly, all custom buttons end in `Button`, all custom cells end in `Table/CollectionViewCell`, all custom labels end in `Label`, all custom something ends in that something. 
-* All view controllers end in `ViewController`. These should be created for you automatically by our template. 
+* When using UIKit, all view controllers end in `ViewController`.
 
 ### File
 
@@ -114,16 +112,10 @@ The distinction between `open` `public` and `internal` is not as important for o
 As of Swift 4, `fileprivate` is rarely required. 
 
 ## Storyboards and nibs
-This is a conflicting topic in the iOS community. We encourage usage of Storyboards and Nibs. They help a new developer on the project understand the screen flow and the codebase and see the bigger picture faster than if they just read the code. The template will automatically create them for you for your viewcontrollers.
-
-However, please don't set the fonts and colors in the storyboard. It's ok to do that to make the view more recognisable in the IB file, but always set the appearance in code too. 
+Although SwiftUI is prefered these days, there may be cases on older projects where you may still wish to develop using storyboards and nibs. If this is the case, please don't set the fonts and colors in the storyboard. It's ok to do that to make the view more recognisable in the IB file, but always set the appearance in code too. 
 
 ## Colors and fonts
-Create categories for UIFont and UIColor with the app's fonts and colors. Zeplin helps with that, and you can export the categories directly from there. 
-
-Always set the fonts and colors in code, using the ones from the categories. A good place to do that is in the `didSet` of the `IBOutlet`s or variables. Another option is to have a `style()` method in your viewcontroller where you set all colors. We are still deciding which approach is better.
-
-Setting them in code allows you to change them really quickly and easily, in all the appropriate places, if it's decided for example to change a color with a darker one. 
+Our template has a Style target which should be used to maintain all colors & fonts. Colors should ideally be added to the project using the Colors Asset Catalog. Fonts, Assets & Colors then be extended and accessed via the code like the examples in the template.
 
 ## Other guidelines
 * Use `let` and not `var` wherever possible
