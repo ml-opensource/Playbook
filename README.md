@@ -15,7 +15,7 @@ We try to increase our contribution to the iOS developer community through:
 - contributing back to some of the other open source libraries we use through issues and PRs
 - encouraging our team members to write tech articles about any topic they desire on our [engineering blog](https://engineering.nodesagency.com/); if needed, we can also suggest topics for new articles
 
-We create lots of apps for our clients. We strive to keep all our applications architecture as modern, consistent and familiar to all developers as possible. We should build all new projects using our [iOS project template](https://github.com/nodes-ios/ios-template), making use of the MVVM pattern using SwiftUI & SPM. We should assure all code is tested to a high level where possible.
+We create lots of apps for our clients. We strive to keep all our applications architecture as modern, consistent and familiar to all developers as possible. We should build all new projects using our [iOS project template](https://github.com/nodes-ios/ios-template), making use of the [Modular MVVM pattern](./ModularArchitecture.md) using SwiftUI & SPM. We should assure all code is tested to a high level where possible. 
 
 # Team meetings
 Here are the recurring meetings the iOS team takes part in:
