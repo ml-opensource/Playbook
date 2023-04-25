@@ -40,7 +40,7 @@ The IT department is responsible for setting up accounts and giving you access t
 - We want you to help us make great open source software. So get another iOS developer to invite you to  [our GitHub organisation](https://github.com/nodes-ios). Make sure you enable your 2FA on GitHub. Our client projects are on [our private git](https://github.com/nodes-projects) and our public ones are on [GitHub](https://github.com/nodes-ios).
 - Set up your git keys properly, so you can pull and push from both git servers.
 - You should have been invited to our Slack and JIRA accounts. Ask IT if you don't have access.
-- Make sure to read the [IM Technology Confluence](https://monstarlab.atlassian.net/wiki/spaces/CTO/overview). That is will provide some extra information regarding each practices covered in Monstarlab IM.
+- Make sure to read the [IM Technology Confluence](https://monstarlab.atlassian.net/wiki/spaces/CTO/overview). It will provide some extra information regarding each practices covered in Monstarlab IM.
 
 # Tools We Use
 
