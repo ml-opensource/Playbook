@@ -151,8 +151,8 @@ workflows:
         inputs:
         - scanner_properties:
             # replace with your project's sonarqube details, see https://monstarlab.atlassian.net/wiki/spaces/CTO/pages/7591755784/SonarQube+Setup#Set-up-Bitrise-Workflow-for-Pull-Request
-             "sonar.projectKey=nodes-projects_test-project-ios_AYPqTLvTjO42SgPMhvYd\nsonar.sources=.\nsonar.host.url=https://sonar.monstarlab.io
-            \nsonar.login=sqp_7e5a2885218659a6db6343fb0926e7923b73fbd9\nsonar.coverageReportPaths=cov.xml\nsonar.c.file.suffixes=-\nsonar.cpp.file.suffixes=-\nsonar.objc.file.suffixes=-"
+             "sonar.projectKey=nodes-projects_test-project-ios_123456789ABCDEFGHIJK\nsonar.sources=.\nsonar.host.url=https://sonar.monstarlab.io
+            \nsonar.login=sqp_123456789ABCDEFGHIJK\nsonar.coverageReportPaths=cov.xml\nsonar.c.file.suffixes=-\nsonar.cpp.file.suffixes=-\nsonar.objc.file.suffixes=-"
 meta:
   bitrise.io:
     stack: osx-xcode-14.1.x-ventura
