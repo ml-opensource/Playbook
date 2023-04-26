@@ -1,7 +1,7 @@
 
 ## 📖 Modular Project architecture
 
-With the addition of SPM, we now aim to modularise our projects as much as possible. The [iOS project template](https://github.com/nodes-ios/ios-template) gives a great starting point on how to do this. Our aim is to modularise all code, meaning all code can be set in standalone features and modules that can be ran and tested independetly in isolation from the rest of the code base. This approach forces us to build simpler code that is less likely to have hidden implicit dependencies that may complicate features unnecessarily.
+With the addition of SPM, we now aim to modularise our projects as much as possible. The [iOS project template](https://github.com/nodes-ios/ios-template) gives a great starting point on how to do this. Our aim is to modularise all code, meaning all code can be set in standalone features and modules that can be run and tested independetly in isolation from the rest of the code base. This approach forces us to build simpler code that is less likely to have hidden implicit dependencies that may complicate features unnecessarily.
 
 Before developing with this modularised approach, you should watch both part 1 & 2 of the [point free episodes](https://www.pointfree.co/episodes/ep171-modularization-part-1), which explain more on the advantages of this approach and how to do it.
 
